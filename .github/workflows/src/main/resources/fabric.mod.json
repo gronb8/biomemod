@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "biomemapcolors",
+  "version": "${version}",
+  "name": "Biome Map Colors",
+  "description": "Makes Minecraft maps display accurate biome grass and foliage colors, like Bedrock Edition and Xaero's Minimap.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.biomemapcolors.BiomeMapColorsClient"
+    ]
+  },
+  "mixins": [
+    "biomemapcolors.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.11"
+  }
+}
